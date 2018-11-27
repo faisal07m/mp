@@ -61,7 +61,6 @@ int checkMandelbrot(float real, float imag, int cutoff){
 
         }
     
-	//if(real > imag) return cutoff;
 	return cutoff;
 }
 
@@ -193,10 +192,13 @@ int main(int argc, char *argv[]){
     for( int i = 0; i < total_ranks; i++) {  
 		Block block;
 
-        if( i % 2 == 0) {
+        if( i % 2 == 0) 
+		{
             block_coord_x = my_rank;
 
-        } else {
+        } 
+		else 
+		{
             block_coord_x = total_ranks - my_rank - 1;
 
         }
