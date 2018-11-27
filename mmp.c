@@ -116,8 +116,8 @@ int main(int argc, char *argv[]){
 	*/
 	int output_size_pixels = 2000;
 	float pos_x = -1.80f;
-	float pos_y = -2.0f;
-	float size = 5.0f;
+	float pos_y = -1.0f;
+	float size = 2.0f;
 	int max_number_iterations = 100;
 
 	//MPI seems to do fine with providing these to all participating processes
